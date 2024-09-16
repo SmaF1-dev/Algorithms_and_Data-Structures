@@ -12,9 +12,12 @@ def calc_fib(n):
 inp_file = open('input.txt')
 inp = int(inp_file.readline())
 inp_file.close()
-out = str(calc_fib(inp))
-out_file = open('output.txt', 'w')
-out_file.write(out)
-out_file.close()
+if 0<=inp<=10**7:
+    out = str(calc_fib(inp))
+    out_file = open('output.txt', 'w')
+    out_file.write(out)
+    out_file.close()
+else:
+    print("Число должно быть от 0 до 10**7!")
 
 print("Время работы: %s секунд " % (time.perf_counter()-t_start))
