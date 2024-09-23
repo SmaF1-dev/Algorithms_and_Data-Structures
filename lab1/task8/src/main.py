@@ -1,36 +1,39 @@
+def parse_lst_oper(arr):
+    idx_pair_to_str = lambda x: f'Swap elements at indices {x[0]} and {x[1]}'
+    return "\n".join(map(idx_pair_to_str, arr)) + "\nNo more swap needed."
+
+
 def list_sort(n, lst):
     lst_oper = []
-    for i in range(1,n):
-        elem = lst[i]
-        j=i-1
-        flag=False
-        while j>=0 and lst[j]>elem:
-            flag=True
-            lst[j+1]=lst[j]
-            j-=1
-        lst[j+1]=elem
-        if flag:
-            lst_oper.append(f'Swap elements at indices {j+2} and {i+1}.\n')
-    lst_oper.append("No more swap needed.")
 
-    return lst_oper
+    for i in range(n):
+        cached_elem = (lst[i], i)
+
+        for j in range(i+1, n):
+            if cached_elem[0] > lst[j]:
+                cached_elem = (lst[j], j)
+
+        if cached_elem[1] != i:
+            lst[i], lst[cached_elem[1]] = lst[cached_elem[1]], lst[i]
+            lst_oper.append((i + 1, cached_elem[1] + 1))
+
+    return parse_lst_oper(lst_oper)
+
 
 def main():
-    file_inp = open("input.txt")
-    n = int(file_inp.readline())
-    lst = list(map(int, file_inp.readline().split()))
-    file_inp.close()
+    with open("input.txt") as file_inp:
+        n = int(file_inp.readline().strip())
+        lst = list(map(int, file_inp.readline().strip().split()))
 
-    if len(lst)!= n:
-        quit("Указанная длина списка не соответствует действительной!")
+    if len(lst) != n:
+        raise Exception("Указанная длина списка не соответствует действительной!")
 
-    if n>5000 or n<3 or max(lst)>10**9:
-        quit("Входные данные не соответствуют условию задачи!")
+    if n > 5000 or n < 3 or max(lst) > 10 ** 9:
+        raise Exception("Входные данные не соответствуют условию задачи!")
 
-    out = ''.join(list_sort(n,lst))
+    with open("output.txt", 'w+') as file_out:
+        file_out.write(list_sort(n, lst))
 
-    file_out = open("output.txt", 'w')
-    file_out.write(out)
-    file_out.close()
 
 main()
+
