@@ -6,7 +6,7 @@ def parse_lst_oper(arr):
 def list_sort(n, lst):
     lst_oper = []
 
-    for i in range(n):
+    for i in range(n-1):
         cached_elem = (lst[i], i)
 
         for j in range(i+1, n):
