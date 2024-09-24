@@ -1,5 +1,5 @@
 def insertion_sort(n, lst):
-    lst_ind = [0 for i in range(n)]
+    lst_ind = [1 for i in range(n)]
     for i in range(1,n):
         elem = lst[i]
         j=i-1
