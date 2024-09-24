@@ -26,10 +26,10 @@ def main():
         lst = list(map(int, file_inp.readline().strip().split()))
 
     if len(lst) != n:
-        raise Exception("Указанная длина списка не соответствует действительной!")
+        quit("Указанная длина списка не соответствует действительной!")
 
     if n > 5000 or n < 3 or max(lst) > 10 ** 9:
-        raise Exception("Входные данные не соответствуют условию задачи!")
+        quit("Входные данные не соответствуют условию задачи!")
 
     with open("output.txt", 'w+') as file_out:
         file_out.write(list_sort(n, lst))
