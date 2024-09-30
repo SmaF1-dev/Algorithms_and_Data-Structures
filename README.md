@@ -11,6 +11,7 @@
 - Markdown — язык разметки для оформления документации
 # Инструкция по запуску
 1. Клонирование репозитория:
+```rb
 git clone https://github.com/username/repository-name.git
-
+```
 
