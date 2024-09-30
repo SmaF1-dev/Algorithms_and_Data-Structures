@@ -5,7 +5,7 @@
 - ```src/``` — исходные коды.
 - ```tests/``` — тесты.
 # Запуск
-1.Клонирование репозитория:
+1.Клонирование репозитория:\n
 ```git clone https://github.com/L1tDeV/algorithms-and-data-structures.git```
 2.Перейдите в папку с проектом:
 ```cd algorithms-and-data-structures/lab1```
