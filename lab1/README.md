@@ -5,12 +5,12 @@
 - ```src/``` — исходные коды.
 - ```tests/``` — тесты.
 # Запуск
-1.Клонирование репозитория:\n
-```git clone https://github.com/L1tDeV/algorithms-and-data-structures.git```
-2.Перейдите в папку с проектом:
-```cd algorithms-and-data-structures/lab1```
-3.Запустите программу:
-```python task1/src/main.py```
-4.Запуск тестов:
-```python task1/tests/test_memory_main.py```
-```python task1/tests/test_time_main.py```
+- 1.Клонирование репозитория:
+- ```git clone https://github.com/L1tDeV/algorithms-and-data-structures.git```
+- 2.Перейдите в папку с проектом:
+- ```cd algorithms-and-data-structures/lab1```
+- 3.Запустите программу:
+- ```python task1/src/main.py```
+- 4.Запуск тестов:
+- ```python task1/tests/test_memory_main.py```
+- ```python task1/tests/test_time_main.py```
