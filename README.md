@@ -1,1 +1,1 @@
-# Algs_DataStr
+# algorithms-and-data-structures
