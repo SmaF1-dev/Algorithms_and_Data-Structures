@@ -12,6 +12,6 @@
 # Инструкция по запуску
 1. Клонирование репозитория:
 ```rb
-git clone https://github.com/username/repository-name.git
+git clone https://github.com/L1tDeV/algorithms-and-data-structures.git
 ```
 
