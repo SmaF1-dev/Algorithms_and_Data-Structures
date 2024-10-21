@@ -1,4 +1,6 @@
 import sys
+from lab2.utils import read_file, check_inp, write_file
+
 def merge(lst, p, q, r):
     n1 = q-p+1
     n2 = r-q
@@ -39,18 +41,21 @@ def merge_sort(lst, p,r,lst_act):
         lst_act.append((p,lst[p],r,lst[r]))
 
 def main():
-    with open("input.txt") as f:
-        n = int(f.readline())
-        lst = list(map(int, f.readline().split()))
-    max_n = 2*10**4
-    max_el=10**9
+    read_inp = read_file("input.txt",2)
+    n = read_inp[0]
+    lst = read_inp[1]
+
+    max_n = 2 * 10 ** 4
+    max_el = 10 ** 9
+    check_inp(max_n, max_el, n, lst)
+
     lst_act = []
-    if n>max_n or n==0 or max(lst)>max_el or len(lst)!=n:
-        quit("Incorrect input")
     merge_sort(lst,0,n-1, lst_act)
-    with open("output.txt","w") as f:
-        for i in range(len(lst_act)):
-            f.write(str(lst_act[i][0]+1)+", "+str(lst_act[i][2]+1)+", "+str(lst_act[i][1])+", "+str(lst_act[i][3])+"\n")
-        f.write(' '.join(map(str,lst)))
+
+    result = ""
+    for i in range(len(lst_act)):
+        result+=str(lst_act[i][0] + 1) + ", " + str(lst_act[i][2] + 1) + ", " + str(lst_act[i][1]) + ", " + str(lst_act[i][3]) + "\n"
+    result+=' '.join(map(str, lst))
+    write_file("output.txt", result, 2)
 
 main()

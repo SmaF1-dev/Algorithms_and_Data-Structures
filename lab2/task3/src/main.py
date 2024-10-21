@@ -1,4 +1,6 @@
 import sys
+from lab2.utils import read_file, check_inp, write_file
+
 def merge(lst, p, q, r, cnt):
     n1 = q-p+1
     n2 = r-q
@@ -45,16 +47,17 @@ def merge_sort(lst, p,r, cnt):
     return cnt
 
 def main():
-    with open("input.txt") as f:
-        n = int(f.readline())
-        lst = list(map(int, f.readline().split()))
+    read_inp = read_file("input.txt",3)
+    n = read_inp[0]
+    lst = read_inp[1]
+
     max_n = 10**5
     max_el=10**9
-    if n>max_n or n==0 or max(lst)>max_el or len(lst)!=n:
-        quit("Incorrect input")
+    check_inp(max_n, max_el, n, lst)
+
     cnt=0
     cnt = merge_sort(lst,0,n-1, cnt)
-    with open("output.txt","w") as f:
-        f.write(str(cnt))
+    result = str(cnt)
+    write_file("output.txt", result, 3)
 
 main()

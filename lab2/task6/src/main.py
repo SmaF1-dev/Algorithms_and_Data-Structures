@@ -1,4 +1,5 @@
 import sys
+from lab2.utils import read_file, check_inp, write_file
 
 sys.setrecursionlimit(10000000)
 def find_max_subarr(lst, low, high):
@@ -37,19 +38,15 @@ def find_max_cross_subarr(lst, low, mid, high):
     return (maxleft, maxright, rightsum+leftsum)
 
 def main():
-    with open("input.txt") as f:
-        n = int(f.readline())
-        lst = list(map(float, f.readline().split()))
+    read_inp = read_file("input.txt",6)
+    n = read_inp[0]
+    lst = read_inp[1]
+
     max_n = 10**5
     max_el=10**9
+    check_inp(max_n, max_el, n, lst)
 
-    if n>max_n or n==0 or max(lst)>max_el or len(lst)!=n:
-        quit("Incorrect input")
-
-    with open("output.txt","w") as f:
-        f.write('Yandex, month (september): \n')
-        lst_ans = find_max_subarr(lst, 0, n)
-        f.write("Buy: "+str(lst_ans[0]+1)+".09, Sell: "+str(lst_ans[1]+1)+".09\n")
-        f.write("Result: "+str(lst_ans[2])+" rub.")
+    lst_ans = find_max_subarr(lst, 0, n)
+    write_file("output.txt", lst_ans,6)
 
 main()

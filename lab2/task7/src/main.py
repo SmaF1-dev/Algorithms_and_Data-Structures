@@ -1,3 +1,5 @@
+from lab2.utils import read_file, check_inp, write_file
+
 def find_subarr(lst, n):
 
     maxim = max(lst)
@@ -28,17 +30,16 @@ def find_subarr(lst, n):
 
 
 def main():
-    with open("input.txt") as f:
-        n = int(f.readline())
-        lst = list(map(int, f.readline().split()))
+    read_inp = read_file("input.txt", 7)
+    n = read_inp[0]
+    lst = read_inp[1]
+
     max_n = 2*10**4
     max_el=10**9
-    if n>max_n or n==0 or max(lst)>max_el or len(lst)!=n:
-        quit("Incorrect input")
+    check_inp(max_n, max_el, n, lst)
 
-    with open("output.txt","w") as f:
-        tuple_answ = find_subarr(lst, n)
-        f.write(str(tuple_answ[2])+'\n')
-        f.write(' '.join(map(str,lst[tuple_answ[0]:tuple_answ[1]+1])))
+    tuple_answ = find_subarr(lst, n)
+    result = str(tuple_answ[2])+'\n' + ' '.join(map(str,lst[tuple_answ[0]:tuple_answ[1]+1]))
+    write_file("output.txt", result, 7)
 
 main()
