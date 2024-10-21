@@ -30,7 +30,7 @@ def find_subarr(lst, n):
 
 
 def main():
-    read_inp = read_file("input.txt", 7)
+    read_inp = read_file("../txtf/input.txt", 7)
     n = read_inp[0]
     lst = read_inp[1]
 
@@ -40,6 +40,6 @@ def main():
 
     tuple_answ = find_subarr(lst, n)
     result = str(tuple_answ[2])+'\n' + ' '.join(map(str,lst[tuple_answ[0]:tuple_answ[1]+1]))
-    write_file("output.txt", result, 7)
+    write_file("../txtf/output.txt", result, 7)
 
 main()

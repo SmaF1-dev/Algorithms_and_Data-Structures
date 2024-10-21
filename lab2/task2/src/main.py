@@ -41,7 +41,7 @@ def merge_sort(lst, p,r,lst_act):
         lst_act.append((p,lst[p],r,lst[r]))
 
 def main():
-    read_inp = read_file("input.txt",2)
+    read_inp = read_file("../txtf/input.txt", 2)
     n = read_inp[0]
     lst = read_inp[1]
 
@@ -56,6 +56,6 @@ def main():
     for i in range(len(lst_act)):
         result+=str(lst_act[i][0] + 1) + ", " + str(lst_act[i][2] + 1) + ", " + str(lst_act[i][1]) + ", " + str(lst_act[i][3]) + "\n"
     result+=' '.join(map(str, lst))
-    write_file("output.txt", result, 2)
+    write_file("../txtf/output.txt", result, 2)
 
 main()

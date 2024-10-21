@@ -38,7 +38,7 @@ def find_max_cross_subarr(lst, low, mid, high):
     return (maxleft, maxright, rightsum+leftsum)
 
 def main():
-    read_inp = read_file("input.txt",6)
+    read_inp = read_file("../txtf/input.txt",6)
     n = read_inp[0]
     lst = read_inp[1]
 
@@ -47,6 +47,6 @@ def main():
     check_inp(max_n, max_el, n, lst)
 
     lst_ans = find_max_subarr(lst, 0, n)
-    write_file("output.txt", lst_ans,6)
+    write_file("../txtf/output.txt", lst_ans,6)
 
 main()

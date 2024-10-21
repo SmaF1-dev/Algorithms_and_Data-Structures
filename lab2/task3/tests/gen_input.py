@@ -1,4 +1,4 @@
-with open("input.txt", 'w') as f:
+with open("../txtf/input.txt", 'w') as f:
     n=10**5
     f.write(str(n)+ '\n')
     lst = []
