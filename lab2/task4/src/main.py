@@ -12,7 +12,7 @@ def binary_search(lst, low, high, elem):
     return -1
 
 def main():
-    read_inp = read_file("../txtf/input.txt", 4)
+    read_inp = read_file("../txtf/input.txt", lambda x: int(x))
     n = read_inp[0]
     lst = read_inp[1]
     k = int(read_inp[2][0])
@@ -28,6 +28,6 @@ def main():
 
     result = ' '.join(map(str,lst_answ))
 
-    write_file("../txtf/output.txt", result, 4)
+    write_file("../txtf/output.txt", result)
 
 main()

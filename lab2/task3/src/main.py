@@ -47,7 +47,7 @@ def merge_sort(lst, p,r, cnt):
     return cnt
 
 def main():
-    read_inp = read_file("../txtf/input.txt", 3)
+    read_inp = read_file("../txtf/input.txt", lambda x: int(x))
     n = read_inp[0]
     lst = read_inp[1]
 
@@ -58,6 +58,6 @@ def main():
     cnt=0
     cnt = merge_sort(lst,0,n-1, cnt)
     result = str(cnt)
-    write_file("../txtf/output.txt", result, 3)
+    write_file("../txtf/output.txt", result)
 
 main()
