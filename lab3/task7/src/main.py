@@ -4,36 +4,14 @@ def cif_sort(lst, k, n):
     for i in range(n):
         lst[i] = (lst[i][::-1], i+1)
 
-    lst_for_sort = [lst[_] for _ in range(n)]
     for i in range(k):
-        lst_for_sort = sorted(lst_for_sort, key=lambda x: x[0][i])
+        lst = sorted(lst, key=lambda x: x[0][i])
 
     answ = ''
     for i in range(n):
-        answ += str(lst_for_sort[i][1])+' '
+        answ += str(lst[i][1])+' '
 
     return answ
-
-
-# def solve(n, m, k, arr: list):
-#     arr.reverse()
-#     res = list(range(0, m))
-#
-#     for i in range(k):
-#         some = [[] for i in range(26)]
-#         for j in range(m):
-#             some[ord(arr[i][res[j]]) - 97].append(res[j])
-#
-#         s = 0
-#         for j in range(26):
-#             if some[j]:
-#                 for t in range(len(some[j])):
-#                     res[s + t] = some[j][t]
-#                 s += len(some[j])
-#
-#     return ' '.join([str(i + 1) for i in res])
-
-
 
 def main():
     read_inp = read_file("../txtf/input.txt", 7)
