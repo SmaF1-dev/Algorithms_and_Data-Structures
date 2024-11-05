@@ -7,13 +7,21 @@
 - `txtf/` — файлы с входными и выходными данными.
 ## Запуск проекта
 1. Клонируйте репозиторий:
-   ```bash
+   ```
    git clone https://github.com/username/algorithms-and-data-structures.git
+   ```
 2. Перейдите в папку с проектом:
-```
-cd algorithms-and-data-structures/lab1
-```
+   ```
+   cd algorithms-and-data-structures/lab2
+   ```
 3. Запустите программу:
-```
-python src/main.py
-```
+   ```
+   python src/main.py
+   ```
+## Тестирование
+Для запуска тестов выполните:
+   ```
+   pytest tests/
+   ```
+## Автор
+Лютый Никита Артемович К3140
