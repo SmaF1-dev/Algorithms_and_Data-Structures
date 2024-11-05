@@ -15,7 +15,7 @@
   git clone https://github.com/L1tDeV/algorithms-and-data-structures.git
   ```
 2. Выберите необходимую лабораторную с номером M:
-  ```
+  ```rb
   cd labM
   ```
 ## Структура проекта
@@ -25,24 +25,24 @@
 - `txtf/` — файлы с входными и выходными данными.
 ## Запуск проекта
 1. Клонируйте репозиторий:
-   ```
+   ```rb
    git clone https://github.com/username/algorithms-and-data-structures.git
    ```
 2. Перейдите в папку с проектом:
-   ```
+   ```rb
    cd algorithms-and-data-structures/labM
    ```
 3. Перейдите в папку с заданием N:
-   ```
+   ```rb
    cd taskN
    ```
 4. Запустите программу:
-   ```
+   ```cmd
    python src/main.py
    ```
 ## Тестирование
 Для запуска тестов выполните:
-   ```
+   ```cmd
    python tests/test_time_main.py
    python tests/test_memory_main.py
    ```
