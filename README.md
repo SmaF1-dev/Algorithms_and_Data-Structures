@@ -11,7 +11,40 @@
 - Markdown — язык разметки для оформления документации
 # Инструкция по запуску
 1. Клонирование репозитория:
-```rb
-git clone https://github.com/L1tDeV/algorithms-and-data-structures.git
-```
-
+  ```rb
+  git clone https://github.com/L1tDeV/algorithms-and-data-structures.git
+  ```
+2. Выберите необходимую лабораторную с номером M:
+  ```
+  cd labM
+  ```
+## Структура проекта
+В папках task1...n лежат следующие папки:
+- `src/` — исходный код программы.
+- `tests/` — тесты для проверки работы кода.
+- `txtf/` — файлы с входными и выходными данными.
+## Запуск проекта
+1. Клонируйте репозиторий:
+   ```
+   git clone https://github.com/username/algorithms-and-data-structures.git
+   ```
+2. Перейдите в папку с проектом:
+   ```
+   cd algorithms-and-data-structures/labM
+   ```
+3. Перейдите в папку с заданием N:
+   ```
+   cd taskN
+   ```
+4. Запустите программу:
+   ```
+   python src/main.py
+   ```
+## Тестирование
+Для запуска тестов выполните:
+   ```
+   python tests/test_time_main.py
+   python tests/test_memory_main.py
+   ```
+## Автор
+Лютый Никита Артемович К3140
