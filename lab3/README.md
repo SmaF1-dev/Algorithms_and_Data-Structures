@@ -8,8 +8,8 @@
 - `txtf/` — файлы с входными и выходными данными.
 ## Запуск проекта
 1. Клонируйте репозиторий:
-   ```
-   git clone https://github.com/username/algorithms-and-data-structures.git
+   ```rb
+   git clone https://github.com/L1tDeV/algorithms-and-data-structures.git
    ```
 2. Перейдите в папку с проектом:
    ```
