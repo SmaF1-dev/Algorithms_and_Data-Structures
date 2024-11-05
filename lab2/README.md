@@ -5,3 +5,11 @@
 - `src/` — исходный код программы.
 - `tests/` — тесты для проверки работы кода.
 - `txtf/` — файлы с входными и выходными данными.
+## Запуск проекта
+1. Клонируйте репозиторий:
+   ```bash
+   git clone https://github.com/username/algorithms-and-data-structures.git
+2. Перейдите в папку с проектом:
+`cd algorithms-and-data-structures/lab1`
+3. Запустите программу:
+`python src/main.py`
