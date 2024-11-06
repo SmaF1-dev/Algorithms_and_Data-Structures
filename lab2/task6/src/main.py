@@ -51,4 +51,5 @@ def main():
     result += "Result: " + str(lst_ans[2]) + " rub."
     write_file("../txtf/output.txt", result)
 
-main()
+if __name__ == '__main__':
+    main()

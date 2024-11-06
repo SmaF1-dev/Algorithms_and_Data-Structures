@@ -60,4 +60,5 @@ def main():
     result = str(cnt)
     write_file("../txtf/output.txt", result)
 
-main()
+if __name__ == '__main__':
+    main()

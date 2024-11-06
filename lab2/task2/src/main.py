@@ -58,4 +58,5 @@ def main():
     result+=' '.join(map(str, lst))
     write_file("../txtf/output.txt", result)
 
-main()
+if __name__ == '__main__':
+    main()

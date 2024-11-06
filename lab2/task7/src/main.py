@@ -42,4 +42,5 @@ def main():
     result = str(tuple_answ[2])+'\n' + ' '.join(map(str,lst[tuple_answ[0]:tuple_answ[1]+1]))
     write_file("../txtf/output.txt", result)
 
-main()
+if __name__ == '__main__':
+    main()
