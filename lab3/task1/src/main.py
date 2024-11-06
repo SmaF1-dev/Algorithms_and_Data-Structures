@@ -31,16 +31,18 @@ def randomized_quicksort(lst, l, r):
         randomized_quicksort(lst, m2+1, r)
 
 def main():
-    read_inp = read_file("../txtf/input.txt", 1)
+    read_inp = read_file("../txtf/input.txt")
     n = read_inp[0][0]
-    lst = read_inp[1]
+    st = read_inp[1][0]
+    lst = list(map(int, st.split()))
 
     max_n = 10**4
     max_el = 10**9
-    check_inp(max_n, max_el, n, lst, [], 1)
+    check_inp(max_n, max_el, [n], [lst])
 
     randomized_quicksort(lst, 0, n-1)
     result = ' '.join(map(str,lst))
     write_file("../txtf/output.txt", result)
 
-main()
+if __name__ == '__main__':
+    main()

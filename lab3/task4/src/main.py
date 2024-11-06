@@ -24,12 +24,20 @@ def find_kol(s,k,lst_int, lst_us):
 
 
 def main():
-    s,k,lst_int, lst_us = read_file('input.txt', 4)
+    read_inp = read_file('../txtf/input.txt')
 
+    s, k = read_inp[0][0], read_inp[0][1]
+    lst_int = []
+    for i in range(s):
+        els = list(map(int, read_inp[1][i].split()))
+        lst_int.append((els[0], els[1]))
+    lst_us = list(map(int, read_inp[1][s].split()))
 
+    l_1 = [lst_int[i][0] for i in range(s)]
+    l_2 = [lst_int[i][1] for i in range(s)]
     max_n = 50000
     max_el = 10 ** 8
-    check_inp(max_n, max_el, s, lst_int, [k, lst_us], 4)
+    check_inp(max_n, max_el, [s,k], [l_1, l_2, lst_us])
 
     lst_answ = find_kol(s,k,lst_int, lst_us)
 
@@ -37,4 +45,5 @@ def main():
 
     write_file("../txtf/output.txt", result)
 
-main()
+if __name__ == '__main__':
+    main()

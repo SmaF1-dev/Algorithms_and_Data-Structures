@@ -17,14 +17,14 @@ def sort_scarecrow(lst, n, k):
 
 
 def main():
-    read_inp = read_file("../txtf/input.txt", 2)
+    read_inp = read_file("../txtf/input.txt")
     n = read_inp[0][0]
     k = read_inp[0][1]
-    lst = read_inp[1]
-
+    st = read_inp[1][0]
+    lst = list(map(int, st.split()))
     max_n = 10**5
     max_el = 10**9
-    check_inp(max_n, max_el, n, lst, [k], 2)
+    check_inp(max_n, max_el, [n, k], [lst])
 
     if k != 1:
         l = sort_scarecrow(lst, n, k)
@@ -36,4 +36,5 @@ def main():
         result = "YES"
     write_file("../txtf/output.txt", result)
 
-main()
+if __name__ == '__main__':
+    main()

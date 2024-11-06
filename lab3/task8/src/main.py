@@ -38,15 +38,19 @@ def get_answ(lst, k, n):
     return answ[:-1]
 
 def main():
-    read_inp = read_file("../txtf/input.txt",8)
-    n = read_inp[0]
-    k = read_inp[1]
-    lst = read_inp[2]
+    read_inp = read_file("../txtf/input.txt")
+    n,k = read_inp[0][0], read_inp[0][1]
+    lst_inp = read_inp[1]
+    lst = []
+    for i in range(n):
+        els = list(map(int, lst_inp[i].split()))
+        lst.append((els[0], els[1], (els[0] ** 2 + els[1] ** 2) ** 0.5))
 
     max_n = 10**5
     max_el=10**9
-    check_inp(max_n, max_el, n, [lst[i][0] for i in range(len(lst))], [k, [lst[i][1] for i in range(len(lst))]],8)
+    check_inp(max_n, max_el, [n,k], [[lst[i][0] for i in range(len(lst))],[lst[i][1] for i in range(len(lst))]])
 
     write_file("../txtf/output.txt", get_answ(lst, k, n))
 
-main()
+if __name__ == '__main__':
+    main()

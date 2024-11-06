@@ -18,10 +18,6 @@ def find_index_hirsh(lst):
 
     return answ
 
-
-
-
-
 def patrition(lst, l, r):
     x = lst[l]
     j=l
@@ -51,16 +47,17 @@ def randomized_quicksort(lst, l, r):
         randomized_quicksort(lst, m2+1, r)
 
 def main():
-    read_inp = read_file("../txtf/input.txt",5)
-    lst = read_inp
+    read_inp = read_file("../txtf/input.txt")
+    lst = read_inp[0]
 
     max_n = 10**5
-    max_el=10**9
-    check_inp(max_n, max_el, len(lst), lst, [],5)
+    max_el = 10**9
+    check_inp(max_n, max_el, [len(lst)], [lst])
 
     randomized_quicksort(lst, 0, len(lst)-1)
     ind = str(find_index_hirsh(lst))
 
     write_file("../txtf/output.txt", str(ind))
 
-main()
+if __name__ == '__main__':
+    main()

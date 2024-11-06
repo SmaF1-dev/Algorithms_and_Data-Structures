@@ -14,19 +14,24 @@ def cif_sort(lst, k, n):
     return answ
 
 def main():
-    read_inp = read_file("../txtf/input.txt", 7)
-    n = read_inp[0]
-    m = read_inp[1]
-    k = read_inp[2]
-    lst = read_inp[3]
+    read_inp = read_file("../txtf/input.txt")
+    lists = read_inp[1]
+
+    n, m, k = read_inp[0][0], read_inp[0][1], read_inp[0][2]
+    lst = ["" for _ in range(n)]
+    for i in range(m):
+        el = lists[i]
+        lst_1 = [p for p in el]
+        for j in range(n):
+            lst[j] += lst_1[j]
 
 
     max_n = 10**6
     max_el = 5*10**7
-    check_inp(max_n, max_el, n, lst, [m, k], 7)
+    check_inp(max_n, max_el, [n,m,k], [[n*m]])
 
     result = cif_sort(lst, k, n)
-    # result = solve(m, n, k, lst)
     write_file("../txtf/output.txt", result)
 
-main()
+if __name__ == '__main__':
+    main()
