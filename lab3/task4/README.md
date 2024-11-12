@@ -1,6 +1,11 @@
 # Задание №4
 ##  Точки и отрезки.
 
+![image](https://github.com/user-attachments/assets/d99a6ba8-8fa1-4c57-9b55-cbfeddf3b1aa)
+![image](https://github.com/user-attachments/assets/ee4becf0-45b1-4225-ad9b-2313be2b53ec)
+
+
+
 | input.txt | output.txt |
 |-----------|------------|
 | 2 3       | 1 0 0      |
