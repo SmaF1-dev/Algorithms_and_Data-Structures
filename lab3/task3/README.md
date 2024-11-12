@@ -1,6 +1,9 @@
 # Задание №3
 ##  Сортировка пугалом.
 
+![image](https://github.com/user-attachments/assets/af8b06e2-d98c-4824-b0b2-1bcaacdcdbac)
+
+
 | input.txt | output.txt |
 |-----------|------------|
 | 3 2       | NO         |
