@@ -13,14 +13,17 @@ def cif_sort(lst, k, n):
 
     return answ
 
-def main():
-    read_inp = read_file("../txtf/input.txt")
+def main(input_path, output_path):
+    read_inp = read_file(input_path)
     lists = read_inp[1]
 
     n, m, k = read_inp[0][0], read_inp[0][1], read_inp[0][2]
+    print('Входные данные:')
+    print(n,m,k)
     lst = ["" for _ in range(n)]
     for i in range(m):
         el = lists[i]
+        print(el[:-1])
         lst_1 = [p for p in el]
         for j in range(n):
             lst[j] += lst_1[j]
@@ -31,7 +34,9 @@ def main():
     check_inp(max_n, max_el, [n,m,k], [[n*m]])
 
     result = cif_sort(lst, k, n)
-    write_file("../txtf/output.txt", result)
+    print('Результат:')
+    print(result)
+    write_file(output_path, result)
 
 if __name__ == '__main__':
-    main()
+    main("../txtf/input.txt", "../txtf/output.txt")

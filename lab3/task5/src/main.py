@@ -46,9 +46,11 @@ def randomized_quicksort(lst, l, r):
         randomized_quicksort(lst, l, m1-1)
         randomized_quicksort(lst, m2+1, r)
 
-def main():
-    read_inp = read_file("../txtf/input.txt")
+def main(input_path, output_path):
+    read_inp = read_file(input_path)
     lst = read_inp[0]
+    print('Входные данные:')
+    print(*lst)
 
     max_n = 10**5
     max_el = 10**9
@@ -56,8 +58,9 @@ def main():
 
     randomized_quicksort(lst, 0, len(lst)-1)
     ind = str(find_index_hirsh(lst))
-
-    write_file("../txtf/output.txt", str(ind))
+    print('Результат:')
+    print(ind)
+    write_file(output_path, str(ind))
 
 if __name__ == '__main__':
-    main()
+    main("../txtf/input.txt", "../txtf/output.txt")

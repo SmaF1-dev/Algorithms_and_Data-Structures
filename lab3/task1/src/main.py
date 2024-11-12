@@ -30,11 +30,14 @@ def randomized_quicksort(lst, l, r):
         randomized_quicksort(lst, l, m1-1)
         randomized_quicksort(lst, m2+1, r)
 
-def main():
-    read_inp = read_file("../txtf/input.txt")
+def main(input_path, output_path):
+    read_inp = read_file(input_path)
     n = read_inp[0][0]
     st = read_inp[1][0]
     lst = list(map(int, st.split()))
+    print("Входные данные:")
+    print(n)
+    print(read_inp[1][0])
 
     max_n = 10**4
     max_el = 10**9
@@ -42,7 +45,9 @@ def main():
 
     randomized_quicksort(lst, 0, n-1)
     result = ' '.join(map(str,lst))
-    write_file("../txtf/output.txt", result)
+    print("Результат:")
+    print(result)
+    write_file(output_path, result)
 
 if __name__ == '__main__':
-    main()
+    main("../txtf/input.txt", "../txtf/output.txt")

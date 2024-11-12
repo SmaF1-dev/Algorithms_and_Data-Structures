@@ -16,12 +16,16 @@ def sort_scarecrow(lst, n, k):
     return True
 
 
-def main():
-    read_inp = read_file("../txtf/input.txt")
+def main(input_path, output_path):
+    read_inp = read_file(input_path)
     n = read_inp[0][0]
     k = read_inp[0][1]
     st = read_inp[1][0]
     lst = list(map(int, st.split()))
+    print('Входные данные:')
+    print(n,k)
+    print(st)
+
     max_n = 10**5
     max_el = 10**9
     check_inp(max_n, max_el, [n, k], [lst])
@@ -34,7 +38,10 @@ def main():
             result = "NO"
     else:
         result = "YES"
-    write_file("../txtf/output.txt", result)
+
+    print('Результат:')
+    print(result)
+    write_file(output_path, result)
 
 if __name__ == '__main__':
-    main()
+    main("../txtf/input.txt", "../txtf/output.txt")

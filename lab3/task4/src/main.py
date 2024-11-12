@@ -23,15 +23,18 @@ def find_kol(s,k,lst_int, lst_us):
     return lst_us
 
 
-def main():
-    read_inp = read_file('../txtf/input.txt')
-
+def main(input_path, output_path):
+    read_inp = read_file(input_path)
     s, k = read_inp[0][0], read_inp[0][1]
+    print('Входные данные:')
+    print(s, k)
     lst_int = []
     for i in range(s):
         els = list(map(int, read_inp[1][i].split()))
         lst_int.append((els[0], els[1]))
+        print(els[0],els[1])
     lst_us = list(map(int, read_inp[1][s].split()))
+    print(read_inp[1][s])
 
     l_1 = [lst_int[i][0] for i in range(s)]
     l_2 = [lst_int[i][1] for i in range(s)]
@@ -42,8 +45,9 @@ def main():
     lst_answ = find_kol(s,k,lst_int, lst_us)
 
     result = ' '.join(map(str,lst_answ))
-
-    write_file("../txtf/output.txt", result)
+    print('Результат:')
+    print(result)
+    write_file(output_path, result)
 
 if __name__ == '__main__':
-    main()
+    main('../txtf/input.txt', "../txtf/output.txt")

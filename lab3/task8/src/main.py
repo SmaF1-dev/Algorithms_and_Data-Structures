@@ -37,20 +37,25 @@ def get_answ(lst, k, n):
         answ += "["+str(el[0])+","+str(el[1])+"]"+","
     return answ[:-1]
 
-def main():
-    read_inp = read_file("../txtf/input.txt")
+def main(input_path, output_path):
+    read_inp = read_file(input_path)
     n,k = read_inp[0][0], read_inp[0][1]
     lst_inp = read_inp[1]
+    print('Входные данные:')
+    print(n, k)
     lst = []
     for i in range(n):
         els = list(map(int, lst_inp[i].split()))
+        print(els[0], els[1])
         lst.append((els[0], els[1], (els[0] ** 2 + els[1] ** 2) ** 0.5))
 
     max_n = 10**5
     max_el=10**9
     check_inp(max_n, max_el, [n,k], [[lst[i][0] for i in range(len(lst))],[lst[i][1] for i in range(len(lst))]])
-
-    write_file("../txtf/output.txt", get_answ(lst, k, n))
+    result = get_answ(lst, k, n)
+    print('Результат:')
+    print(result)
+    write_file(output_path, result)
 
 if __name__ == '__main__':
-    main()
+    main("../txtf/input.txt", "../txtf/output.txt")
