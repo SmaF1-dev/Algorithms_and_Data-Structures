@@ -1,6 +1,9 @@
 # Задание №1
 ##  Стек.
 
+![image](https://github.com/user-attachments/assets/471c1321-6524-4ae4-b14a-f0e6130baf6f)
+
+
 | input.txt | output.txt |
 |-----------|------------|
 | 6         | 10         |
