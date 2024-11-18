@@ -3,7 +3,7 @@ import tracemalloc
 
 def test_memory():
     tracemalloc.start()
-    main()
+    main("../txtf/input.txt", "../txtf/output.txt")
     print("Максимально занимаемая память: "+str(tracemalloc.get_traced_memory()[1]/1024)+" KB")
     tracemalloc.stop()
 

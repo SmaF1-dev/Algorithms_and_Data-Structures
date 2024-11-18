@@ -37,10 +37,13 @@ def find_max_cross_subarr(lst, low, mid, high):
             maxright = i
     return (maxleft, maxright, rightsum+leftsum)
 
-def main():
-    read_inp = read_file("../txtf/input.txt", lambda x: float(x))
+def main(input_path, output_path):
+    read_inp = read_file(input_path, lambda x: float(x))
     n = read_inp[0]
     lst = read_inp[1]
+    print("Входные данные:")
+    print(n)
+    print(*lst)
 
     max_n = 10**5
     max_el=10**9
@@ -49,7 +52,9 @@ def main():
     lst_ans = find_max_subarr(lst, 0, n)
     result = 'Yandex, month (september): \n' + "Buy: " + str(lst_ans[0] + 1) + ".09, Sell: " + str(lst_ans[1] + 1) + ".09\n"
     result += "Result: " + str(lst_ans[2]) + " rub."
-    write_file("../txtf/output.txt", result)
+    print("Результат:")
+    print(result)
+    write_file(output_path, result)
 
 if __name__ == '__main__':
-    main()
+    main("../txtf/input.txt", "../txtf/output.txt")

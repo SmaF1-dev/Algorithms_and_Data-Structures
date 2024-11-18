@@ -29,10 +29,13 @@ def find_subarr(lst, n):
 
 
 
-def main():
-    read_inp = read_file("../txtf/input.txt", lambda x: int(x))
+def main(input_path, output_path):
+    read_inp = read_file(input_path, lambda x: int(x))
     n = read_inp[0]
     lst = read_inp[1]
+    print("Входные данные:")
+    print(n)
+    print(*lst)
 
     max_n = 2*10**4
     max_el=10**9
@@ -40,7 +43,9 @@ def main():
 
     tuple_answ = find_subarr(lst, n)
     result = str(tuple_answ[2])+'\n' + ' '.join(map(str,lst[tuple_answ[0]:tuple_answ[1]+1]))
-    write_file("../txtf/output.txt", result)
+    print("Результат:")
+    print(result)
+    write_file(output_path, result)
 
 if __name__ == '__main__':
-    main()
+    main("../txtf/input.txt", "../txtf/output.txt")

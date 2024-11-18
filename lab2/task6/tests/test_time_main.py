@@ -3,7 +3,7 @@ import time
 
 def test_time():
     time_st = time.perf_counter()
-    main()
+    main("../txtf/input.txt", "../txtf/output.txt")
     print(f'Время работы программы %s секунд.' % (time.perf_counter() - time_st))
 
 

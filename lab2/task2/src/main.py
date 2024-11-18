@@ -40,10 +40,13 @@ def merge_sort(lst, p,r,lst_act):
         merge(lst,p,q,r)
         lst_act.append((p,lst[p],r,lst[r]))
 
-def main():
-    read_inp = read_file("../txtf/input.txt", lambda x: int(x))
+def main(input_path, output_path):
+    read_inp = read_file(input_path, lambda x: int(x))
     n = read_inp[0]
     lst = read_inp[1]
+    print("Входные данные:")
+    print(n)
+    print(*lst)
 
     max_n = 2 * 10 ** 4
     max_el = 10 ** 9
@@ -56,7 +59,9 @@ def main():
     for i in range(len(lst_act)):
         result+=str(lst_act[i][0] + 1) + ", " + str(lst_act[i][2] + 1) + ", " + str(lst_act[i][1]) + ", " + str(lst_act[i][3]) + "\n"
     result+=' '.join(map(str, lst))
-    write_file("../txtf/output.txt", result)
+    print("Результат:")
+    print(result)
+    write_file(output_path, result)
 
 if __name__ == '__main__':
-    main()
+    main("../txtf/input.txt","../txtf/output.txt")
