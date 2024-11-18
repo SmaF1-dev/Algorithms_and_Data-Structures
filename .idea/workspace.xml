@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f54d1422-3b7f-45da-9d6e-e657b2da95ca" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/lab4/task11/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/task11/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/task13_1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/task13_1/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/task13_2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/task13_2/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/task4/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/task4/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/task6/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/task6/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/task8/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/task8/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2nktVe5fUkdzgM2hxHvpG6M3P6D" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests in tests.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Unittests in Desktop.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Unittests in lab4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gen_input.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gen_input1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gen_input2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.run_labs.executor&quot;: &quot;Run&quot;,
+    &quot;Python.run_tasks.executor&quot;: &quot;Run&quot;,
+    &quot;Python.run_tests.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_memory_main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_time_main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tests.executor&quot;: &quot;Run&quot;,
+    &quot;Python.utils.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/smaf1/OneDrive/Desktop/ITMO/algorithms-and-data-structures/lab4&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\smaf1\OneDrive\Desktop\ITMO\algorithms-and-data-structures\lab4" />
+      <recent name="C:\Users\smaf1\OneDrive\Desktop\ITMO\algorithms-and-data-structures\lab4\task13_2\tests" />
+      <recent name="C:\Users\smaf1\OneDrive\Desktop\ITMO\algorithms-and-data-structures\lab4\task13_1\tests" />
+      <recent name="C:\Users\smaf1\OneDrive\Desktop\ITMO\algorithms-and-data-structures\lab4\task11\tests" />
+      <recent name="C:\Users\smaf1\OneDrive\Desktop\ITMO\algorithms-and-data-structures\lab4\task8\tests" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\smaf1\OneDrive\Desktop\ITMO\algorithms-and-data-structures\lab4" />
+      <recent name="C:\Users\smaf1\OneDrive\Desktop\ITMO\algorithms-and-data-structures\lab2\task1\txtf" />
+      <recent name="C:\Users\smaf1\OneDrive\Desktop\ITMO\algorithms-and-data-structures\lab2\task2\txtf" />
+      <recent name="C:\Users\smaf1\OneDrive\Desktop\ITMO\algorithms-and-data-structures\lab2\task3\txtf" />
+      <recent name="C:\Users\smaf1\OneDrive\Desktop\ITMO\algorithms-and-data-structures\lab2\task4\txtf" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.run_tasks">
+    <configuration name="run_tasks" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="algorithms-and-data-structures" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab4" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab4/run_tasks.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in lab4" type="tests" factoryName="Unittests" nameIsGenerated="true">
+      <module name="algorithms-and-data-structures" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/.venv/Scripts/python.exe" />
+      <option name="SDK_NAME" value="Python 3.11 (algorithms-and-data-structures)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_pattern" value="&quot;test_*&quot;" />
+      <option name="_new_additionalArguments" value="&quot;tests&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/lab4&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.run_tasks" />
+      <item itemvalue="Python tests.Unittests in lab4" />
+    </list>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-fb887030ada0-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.21565.199" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f54d1422-3b7f-45da-9d6e-e657b2da95ca" name="Changes" comment="" />
+      <created>1729528926421</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729528926421</updated>
+      <workItem from="1729528927444" duration="1986000" />
+      <workItem from="1729791128329" duration="15952000" />
+      <workItem from="1729847088812" duration="4061000" />
+      <workItem from="1729859247274" duration="646000" />
+      <workItem from="1729883050589" duration="16128000" />
+      <workItem from="1729948737498" duration="449000" />
+      <workItem from="1730126615962" duration="6000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/algorithms_and_data_structures$test_memory_main.coverage" NAME="test_memory_main Coverage Results" MODIFIED="1729890218260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab3/task5/tests" />
+    <SUITE FILE_PATH="coverage/algorithms_and_data_structures$gen_input1.coverage" NAME="gen_input1 Coverage Results" MODIFIED="1729891678864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab3/task1/tests" />
+    <SUITE FILE_PATH="coverage/algorithms_and_data_structures$gen_input.coverage" NAME="gen_input Coverage Results" MODIFIED="1729903044736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab3/task7/tests" />
+    <SUITE FILE_PATH="coverage/algorithms_and_data_structures$utils.coverage" NAME="utils Coverage Results" MODIFIED="1729902872818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab3" />
+    <SUITE FILE_PATH="coverage/algorithms_and_data_structures$gen_input2.coverage" NAME="gen_input2 Coverage Results" MODIFIED="1729799620373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab3/task1/tests" />
+    <SUITE FILE_PATH="coverage/algorithms_and_data_structures$main.coverage" NAME="main Coverage Results" MODIFIED="1729902496587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab3/task7/src" />
+    <SUITE FILE_PATH="coverage/algorithms_and_data_structures$test_time_main.coverage" NAME="test_time_main Coverage Results" MODIFIED="1729903051502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab3/task7/tests" />
+  </component>
+</project>
