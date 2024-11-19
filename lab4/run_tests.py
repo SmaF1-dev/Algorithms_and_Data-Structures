@@ -2,6 +2,9 @@ import os
 import sys
 import unittest
 
+# Добавляем корневую директорию проекта в sys.path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 def run_all_tests():
     suite = unittest.TestSuite()
 
@@ -11,13 +14,13 @@ def run_all_tests():
 
     # Прямо указываем каждый тестовый файл
     test_files = [
-        'task1.tests.test_task1',
-        'task4.tests.test_task4',
-        'task6.tests.test_task6',
-        'task8.tests.test_task8',
-        'task11.tests.test_task11',
-        'task13_1.tests.test_task13_1',
-        'task13_2.tests.test_task13_2'
+        'lab4.task1.tests.test_task1',
+        'lab4.task4.tests.test_task4',
+        'lab4.task6.tests.test_task6',
+        'lab4.task8.tests.test_task8',
+        'lab4.task11.tests.test_task11',
+        'lab4.task13_1.tests.test_task13_1',
+        'lab4.task13_2.tests.test_task13_2'
     ]
 
     # Добавляем тесты вручную

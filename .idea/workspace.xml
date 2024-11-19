@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f54d1422-3b7f-45da-9d6e-e657b2da95ca" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/lab4/task11/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/task11/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/task13_1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/task13_1/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/task13_2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/task13_2/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/task4/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/task4/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/task6/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/task6/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/task8/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/task8/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run_all_labs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run_all_tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3/run_tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/run_tasks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3/run_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/run_tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/run_tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/run_tasks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/run_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/run_tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,43 +36,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests in tests.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Unittests in Desktop.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Unittests in lab4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.gen_input.executor&quot;: &quot;Run&quot;,
-    &quot;Python.gen_input1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.gen_input2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.run_labs.executor&quot;: &quot;Run&quot;,
-    &quot;Python.run_tasks.executor&quot;: &quot;Run&quot;,
-    &quot;Python.run_tests.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_memory_main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_time_main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tests.executor&quot;: &quot;Run&quot;,
-    &quot;Python.utils.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/smaf1/OneDrive/Desktop/ITMO/algorithms-and-data-structures/lab4&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests in test_task3.py.executor": "Run",
+    "Python tests.Python tests in test_task4.py.executor": "Run",
+    "Python tests.Python tests in test_task5.py.executor": "Run",
+    "Python tests.Python tests in test_task7.py.executor": "Run",
+    "Python tests.Python tests in test_task8.py.executor": "Run",
+    "Python tests.Python tests in tests.py.executor": "Run",
+    "Python tests.Unittests in Desktop.executor": "Run",
+    "Python tests.Unittests in lab4.executor": "Run",
+    "Python.gen_input.executor": "Run",
+    "Python.gen_input1.executor": "Run",
+    "Python.gen_input2.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.run_all_labs.executor": "Run",
+    "Python.run_all_tests.executor": "Run",
+    "Python.run_labs.executor": "Run",
+    "Python.run_tasks.executor": "Run",
+    "Python.run_tests.executor": "Run",
+    "Python.test_memory_main.executor": "Run",
+    "Python.test_time_main.executor": "Run",
+    "Python.tests.executor": "Run",
+    "Python.utils.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/smaf1/OneDrive/Desktop/ITMO/algorithms-and-data-structures/lab3",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\smaf1\OneDrive\Desktop\ITMO\algorithms-and-data-structures\lab4" />
-      <recent name="C:\Users\smaf1\OneDrive\Desktop\ITMO\algorithms-and-data-structures\lab4\task13_2\tests" />
-      <recent name="C:\Users\smaf1\OneDrive\Desktop\ITMO\algorithms-and-data-structures\lab4\task13_1\tests" />
-      <recent name="C:\Users\smaf1\OneDrive\Desktop\ITMO\algorithms-and-data-structures\lab4\task11\tests" />
-      <recent name="C:\Users\smaf1\OneDrive\Desktop\ITMO\algorithms-and-data-structures\lab4\task8\tests" />
+      <recent name="C:\Users\smaf1\OneDrive\Desktop\ITMO\algorithms-and-data-structures\lab3" />
+      <recent name="C:\Users\smaf1\OneDrive\Desktop\ITMO\algorithms-and-data-structures\lab3\task8\tests" />
+      <recent name="C:\Users\smaf1\OneDrive\Desktop\ITMO\algorithms-and-data-structures\lab3\task7\tests" />
+      <recent name="C:\Users\smaf1\OneDrive\Desktop\ITMO\algorithms-and-data-structures\lab3\task5\tests" />
+      <recent name="C:\Users\smaf1\OneDrive\Desktop\ITMO\algorithms-and-data-structures\lab3\task4\tests" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\smaf1\OneDrive\Desktop\ITMO\algorithms-and-data-structures\lab4" />
@@ -81,7 +89,7 @@
       <recent name="C:\Users\smaf1\OneDrive\Desktop\ITMO\algorithms-and-data-structures\lab2\task4\txtf" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.run_tasks">
+  <component name="RunManager">
     <configuration name="run_tasks" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="algorithms-and-data-structures" />
       <option name="ENV_FILES" value="" />
