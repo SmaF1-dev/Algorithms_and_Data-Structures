@@ -1,7 +1,6 @@
 from lab4.task6.src.main import process_commands
 import time
 import tracemalloc
-
 import unittest
 
 class TestQueueMin(unittest.TestCase):
@@ -22,9 +21,6 @@ class TestQueueMin(unittest.TestCase):
         result = process_commands(data)
         memory = tracemalloc.get_traced_memory()[1]/1024/1024
         tracemalloc.stop()
-
-        print("Задание №6. Тест.Итоговое время алгоритма (сек):", time_end)
-        print("Задание №6. Тест.Итоговая занимаемая память алгоритма (МБ):", memory)
 
         # then
         self.assertEqual(result, expected_result)

@@ -1,5 +1,4 @@
 from random import randint
-
 from lab3.utils import read_file, check_inp, write_file
 
 def patrition(lst, l, r):
@@ -30,6 +29,11 @@ def randomized_quicksort(lst, l, r):
         randomized_quicksort(lst, l, m1-1)
         randomized_quicksort(lst, m2+1, r)
 
+def run_sort(lst, n):
+    randomized_quicksort(lst, 0, n - 1)
+
+    return lst
+
 def main(input_path, output_path):
     read_inp = read_file(input_path)
     n = read_inp[0][0]
@@ -43,8 +47,7 @@ def main(input_path, output_path):
     max_el = 10**9
     check_inp(max_n, max_el, [n], [lst])
 
-    randomized_quicksort(lst, 0, n-1)
-    result = ' '.join(map(str,lst))
+    result = ' '.join(map(str,run_sort(lst, n)))
     print("Результат:")
     print(result)
     write_file(output_path, result)

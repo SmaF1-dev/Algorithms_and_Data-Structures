@@ -15,7 +15,6 @@ def sort_scarecrow(lst, n, k):
 
     return True
 
-
 def main(input_path, output_path):
     read_inp = read_file(input_path)
     n = read_inp[0][0]

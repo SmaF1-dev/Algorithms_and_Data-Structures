@@ -1,7 +1,6 @@
 from lab4.task8.src.main import evaluate_postfix
 import time
 import tracemalloc
-
 import unittest
 
 class TestPostfix(unittest.TestCase):
@@ -22,9 +21,6 @@ class TestPostfix(unittest.TestCase):
         result = evaluate_postfix(data)
         memory = tracemalloc.get_traced_memory()[1]/1024/1024
         tracemalloc.stop()
-
-        print("Задание №8. Тест.Итоговое время алгоритма (сек):", time_end)
-        print("Задание №8. Тест.Итоговая занимаемая память алгоритма (МБ):", memory)
 
         # then
         self.assertEqual(result, expected_result)

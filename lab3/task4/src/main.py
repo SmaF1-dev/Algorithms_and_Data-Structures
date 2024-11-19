@@ -1,13 +1,16 @@
 from lab3.utils import read_file, check_inp, write_file
 
 def find_kol(s,k,lst_int, lst_us):
+    lst_us_copy = lst_us.copy()
+    lst_int_copy = lst_int.copy()
+
     lst = []
     for i in range(s):
-        lst.append((lst_int[i][0], -1))
-        lst.append((lst_int[i][1], -2))
+        lst.append((lst_int_copy[i][0], -1))
+        lst.append((lst_int_copy[i][1], -2))
 
     for i in range(k):
-        lst.append((lst_us[i], i))
+        lst.append((lst_us_copy[i], i))
 
     lst = sorted(lst)
     length = len(lst)
@@ -19,8 +22,8 @@ def find_kol(s,k,lst_int, lst_us):
         elif lst[i][1] == -2:
             cnt -= 1
         else:
-            lst_us[lst[i][1]] = cnt
-    return lst_us
+            lst_us_copy[lst[i][1]] = cnt
+    return lst_us_copy
 
 
 def main(input_path, output_path):
@@ -42,8 +45,11 @@ def main(input_path, output_path):
     max_el = 10 ** 8
     check_inp(max_n, max_el, [s,k], [l_1, l_2, lst_us])
 
+    print(s, k)
+    print(lst_int)
+    print(lst_us)
     lst_answ = find_kol(s,k,lst_int, lst_us)
-
+    print(lst_answ)
     result = ' '.join(map(str,lst_answ))
     print('Результат:')
     print(result)

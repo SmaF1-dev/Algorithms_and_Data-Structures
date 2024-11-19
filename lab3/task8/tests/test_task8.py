@@ -1,25 +1,26 @@
-from lab4.task11.src.main import end_day
+from lab3.task8.src.main import sorted_to_str, get_new_lst
 import time
 import tracemalloc
 import unittest
 
-class TestEndDay(unittest.TestCase):
+class TestPointsToStart(unittest.TestCase):
 
-    def test_should_end_day_first(self):
+    def test_should_points_to_start_first(self):
         # given
-        expected_result = (2, [3, 1])
-        m = 2
-        data = [1, 2, 3]
+        expected_result = '[-2,2]'
+        k = 1
+        n = 2
+        data = get_new_lst(['1 3\n', '-2 2'], n)
         expected_time = 2
         expected_memory = 256
 
         # when
         time_st = time.perf_counter()
-        result = end_day(m,data)
+        result = sorted_to_str(data,k,n)
         time_end = time.perf_counter() - time_st
 
         tracemalloc.start()
-        result = end_day(m,data)
+        result = sorted_to_str(data,k,n)
         memory = tracemalloc.get_traced_memory()[1]/1024/1024
         tracemalloc.stop()
 
@@ -28,21 +29,22 @@ class TestEndDay(unittest.TestCase):
         self.assertLessEqual(time_end, expected_time, f"Значение {time_end} превышает порог {expected_time}")
         self.assertLessEqual(memory, expected_memory, f"Значение {memory} превышает порог {expected_memory}")
 
-    def test_should_end_day_second(self):
+    def test_should_points_to_start_second(self):
         # given
-        expected_result = (3, [4,1,2])
-        m = 5
-        data = [2,5,2,3]
+        expected_result = '[3,3],[-2,4]'
+        k = 2
+        n = 3
+        data = get_new_lst(['3 3\n', '5 -1\n', '-2 4'], n)
         expected_time = 2
         expected_memory = 256
 
         # when
         time_st = time.perf_counter()
-        result = end_day(m,data)
+        result = sorted_to_str(data,k,n)
         time_end = time.perf_counter() - time_st
 
         tracemalloc.start()
-        result = end_day(m,data)
+        result = sorted_to_str(data,k,n)
         memory = tracemalloc.get_traced_memory()[1]/1024/1024
         tracemalloc.stop()
 
@@ -53,3 +55,4 @@ class TestEndDay(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+

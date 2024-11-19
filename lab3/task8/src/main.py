@@ -29,8 +29,17 @@ def randomized_quicksort(lst, l, r):
         randomized_quicksort(lst, l, m1-1)
         randomized_quicksort(lst, m2+1, r)
 
-def get_answ(lst, k, n):
+def get_new_lst(lst_inp, n):
+    lst = []
+    for i in range(n):
+        els = list(map(int, lst_inp[i].split()))
+        lst.append((els[0], els[1], (els[0] ** 2 + els[1] ** 2) ** 0.5))
+
+    return lst
+
+def sorted_to_str(lst, k, n):
     randomized_quicksort(lst, 0, n-1)
+
     answ = ''
     for i in range(k):
         el = lst[i]
@@ -43,16 +52,13 @@ def main(input_path, output_path):
     lst_inp = read_inp[1]
     print('Входные данные:')
     print(n, k)
-    lst = []
-    for i in range(n):
-        els = list(map(int, lst_inp[i].split()))
-        print(els[0], els[1])
-        lst.append((els[0], els[1], (els[0] ** 2 + els[1] ** 2) ** 0.5))
+    print(*lst_inp)
+    lst = get_new_lst(lst_inp, n)
 
     max_n = 10**5
     max_el=10**9
     check_inp(max_n, max_el, [n,k], [[lst[i][0] for i in range(len(lst))],[lst[i][1] for i in range(len(lst))]])
-    result = get_answ(lst, k, n)
+    result = sorted_to_str(lst, k, n)
     print('Результат:')
     print(result)
     write_file(output_path, result)

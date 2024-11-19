@@ -1,25 +1,26 @@
-from lab4.task11.src.main import end_day
+from lab3.task3.src.main import sort_scarecrow
 import time
 import tracemalloc
 import unittest
 
-class TestEndDay(unittest.TestCase):
+class TestSortScarecrow(unittest.TestCase):
 
-    def test_should_end_day_first(self):
+    def test_should_sort_scarecrow_fail(self):
         # given
-        expected_result = (2, [3, 1])
-        m = 2
-        data = [1, 2, 3]
+        expected_result = False
+        n = 3
+        k = 2
+        data = [2,1,3]
         expected_time = 2
         expected_memory = 256
 
         # when
         time_st = time.perf_counter()
-        result = end_day(m,data)
+        result = sort_scarecrow(data,n,k)
         time_end = time.perf_counter() - time_st
 
         tracemalloc.start()
-        result = end_day(m,data)
+        result = sort_scarecrow(data,n,k)
         memory = tracemalloc.get_traced_memory()[1]/1024/1024
         tracemalloc.stop()
 
@@ -28,21 +29,22 @@ class TestEndDay(unittest.TestCase):
         self.assertLessEqual(time_end, expected_time, f"Значение {time_end} превышает порог {expected_time}")
         self.assertLessEqual(memory, expected_memory, f"Значение {memory} превышает порог {expected_memory}")
 
-    def test_should_end_day_second(self):
+    def test_should_sort_scarecrow_success(self):
         # given
-        expected_result = (3, [4,1,2])
-        m = 5
-        data = [2,5,2,3]
+        expected_result = True
+        n = 5
+        k = 3
+        data = [1,5,3,4,1]
         expected_time = 2
         expected_memory = 256
 
         # when
         time_st = time.perf_counter()
-        result = end_day(m,data)
+        result = sort_scarecrow(data,n,k)
         time_end = time.perf_counter() - time_st
 
         tracemalloc.start()
-        result = end_day(m,data)
+        result = sort_scarecrow(data,n,k)
         memory = tracemalloc.get_traced_memory()[1]/1024/1024
         tracemalloc.stop()
 
@@ -53,3 +55,4 @@ class TestEndDay(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+

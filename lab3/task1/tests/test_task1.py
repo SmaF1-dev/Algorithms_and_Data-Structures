@@ -1,25 +1,25 @@
-from lab4.task1.src.main import work_with_stack
+from lab3.task1.src.main import run_sort
 import time
 import tracemalloc
 import unittest
 
-class TestStack(unittest.TestCase):
+class TestQuickSort(unittest.TestCase):
 
-    def test_should_stack(self):
+    def test_should_quicksort(self):
         # given
-        expected_result = [10, 1234]
-        n = 6
-        data = ['+ 1\n', '+ 10\n', '-\n', '+ 2\n', '+ 1234\n', '-']
+        expected_result = [2,2,2,3,9]
+        n = 5
+        data = [2,3,9,2,2]
         expected_time = 2
         expected_memory = 256
 
         # when
         time_st = time.perf_counter()
-        result = work_with_stack(n,data)
+        result = run_sort(data,n)
         time_end = time.perf_counter() - time_st
 
         tracemalloc.start()
-        result = work_with_stack(n, data)
+        result = run_sort(data,n)
         memory = tracemalloc.get_traced_memory()[1]/1024/1024
         tracemalloc.stop()
 
@@ -30,3 +30,4 @@ class TestStack(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+

@@ -1,15 +1,16 @@
 from lab3.utils import read_file, check_inp, write_file
 
 def cif_sort(lst, k, n):
+    lst_copy = lst.copy()
     for i in range(n):
-        lst[i] = (lst[i][::-1], i+1)
+        lst_copy[i] = (lst_copy[i][::-1], i+1)
 
     for i in range(k):
-        lst = sorted(lst, key=lambda x: x[0][i])
+        lst_copy = sorted(lst_copy, key=lambda x: x[0][i])
 
     answ = ''
     for i in range(n):
-        answ += str(lst[i][1])+' '
+        answ += str(lst_copy[i][1])+' '
 
     return answ
 
@@ -28,7 +29,7 @@ def main(input_path, output_path):
         for j in range(n):
             lst[j] += lst_1[j]
 
-
+    print(lst)
     max_n = 10**6
     max_el = 5*10**7
     check_inp(max_n, max_el, [n,m,k], [[n*m]])
