@@ -59,7 +59,7 @@ def main(input_path, output_path):
     check_inp(max_n, max_el, n, lst)
 
     cnt=0
-    cnt = merge_sort(lst,0,n-1, cnt)
+    cnt = merge_sort(lst.copy(),0,n-1, cnt)
     result = str(cnt)
     print("Результат:")
     print(result)

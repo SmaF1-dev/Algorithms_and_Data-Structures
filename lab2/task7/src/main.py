@@ -26,22 +26,20 @@ def find_subarr(lst, n):
             out = (ind_st, ind_fin, max_sum)
     return out
 
-
-
-
 def main(input_path, output_path):
     read_inp = read_file(input_path, lambda x: int(x))
     n = read_inp[0]
     lst = read_inp[1]
     print("Входные данные:")
     print(n)
-    print(*lst)
+    print(lst)
 
     max_n = 2*10**4
     max_el=10**9
     check_inp(max_n, max_el, n, lst)
 
     tuple_answ = find_subarr(lst, n)
+    print(tuple_answ)
     result = str(tuple_answ[2])+'\n' + ' '.join(map(str,lst[tuple_answ[0]:tuple_answ[1]+1]))
     print("Результат:")
     print(result)

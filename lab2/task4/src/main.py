@@ -11,6 +11,13 @@ def binary_search(lst, low, high, elem):
             high = mid-1
     return -1
 
+def search_all(lst,n,k,lst_el):
+    lst_answ = []
+    for i in range(k):
+        lst_answ.append(binary_search(lst, 0, n - 1, lst_el[i]))
+
+    return lst_answ
+
 def main(input_path, output_path):
     read_inp = read_file(input_path, lambda x: int(x))
     n = read_inp[0]
@@ -27,11 +34,7 @@ def main(input_path, output_path):
     max_el = 10 ** 9
     check_inp(max_n, max_el, n, lst)
 
-    lst_answ = []
-    for i in range(k):
-        lst_answ.append(binary_search(lst, 0, n - 1, lst_el[i]))
-
-    result = ' '.join(map(str,lst_answ))
+    result = ' '.join(map(str,search_all(lst,n,k,lst_el)))
     print("Результат:")
     print(result)
     write_file(output_path, result)

@@ -40,6 +40,11 @@ def merge_sort(lst, p,r,lst_act):
         merge(lst,p,q,r)
         lst_act.append((p,lst[p],r,lst[r]))
 
+def run_sort(lst,p,n,lst_act):
+    lst_copy = lst.copy()
+    merge_sort(lst_copy,0,n-1, lst_act)
+    return lst_copy, lst_act
+
 def main(input_path, output_path):
     read_inp = read_file(input_path, lambda x: int(x))
     n = read_inp[0]
@@ -53,7 +58,7 @@ def main(input_path, output_path):
     check_inp(max_n, max_el, n, lst)
 
     lst_act = []
-    merge_sort(lst,0,n-1, lst_act)
+    lst, lst_act = run_sort(lst,0,n,lst_act)
 
     result = ""
     for i in range(len(lst_act)):

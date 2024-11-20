@@ -39,6 +39,12 @@ def merge_sort(lst, p,r):
         merge_sort(lst,q+1,r)
         merge(lst,p,q,r)
 
+def run_sort(lst,n):
+    lst_copy = lst.copy()
+    merge_sort(lst_copy, 0, n - 1)
+
+    return lst_copy
+
 def main(input_path, output_path):
     read_inp = read_file(input_path, lambda x: int(x))
     n = read_inp[0]
@@ -51,8 +57,7 @@ def main(input_path, output_path):
     max_el=10**9
     check_inp(max_n, max_el, n, lst)
 
-    merge_sort(lst,0,n-1)
-    result = ' '.join(map(str,lst))
+    result = ' '.join(map(str,run_sort(lst,n)))
     print("Результат:")
     print(result)
     write_file(output_path, result)
