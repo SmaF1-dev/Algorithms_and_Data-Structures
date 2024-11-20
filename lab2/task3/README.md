@@ -1,8 +1,7 @@
 # Задание №3
 ##  Число инверсий.
 
-
-
+![image](https://github.com/user-attachments/assets/6440b7ba-cc34-46d6-99c1-3d3f0e58211c)
 
 | input.txt             | output.txt |
 |-----------------------|------------|
