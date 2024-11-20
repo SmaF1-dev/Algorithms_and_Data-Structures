@@ -1,6 +1,9 @@
 # Задание №2
 ##  Сортировка слиянием+.
 
+![image](https://github.com/user-attachments/assets/52319ab3-b322-4acc-819e-e5d558c6b88b)
+![image](https://github.com/user-attachments/assets/c6092b49-df3e-4df8-b280-c7a90bc4680e)
+![image](https://github.com/user-attachments/assets/e564180a-448b-4cc4-be1d-a951290f3e52)
 
 
 
