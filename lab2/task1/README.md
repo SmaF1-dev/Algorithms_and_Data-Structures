@@ -1,6 +1,7 @@
 # Задание №1
 ##  Сортировка слиянием.
 
+![image](https://github.com/user-attachments/assets/c5a0ed8e-c984-4b98-80f0-4805b5e140e9)
 
 
 | input.txt            | output.txt           |
