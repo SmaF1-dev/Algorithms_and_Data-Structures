@@ -1,8 +1,7 @@
 # Задание №4
 ##  Бинарный поиск.
 
-
-
+![image](https://github.com/user-attachments/assets/60146a3d-7a1f-482a-b0d0-fcb693405a9e)
 
 | input.txt   | output.txt   |
 |-------------|--------------|
