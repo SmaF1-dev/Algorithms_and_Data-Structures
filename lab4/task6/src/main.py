@@ -36,7 +36,8 @@ def main(input_path, output_path):
     n = int(read_inp[0])
     commands = read_inp[1]
     print('Входные данные:')
-    print(n, commands)
+    print(n)
+    print(*commands)
 
 
     lst_answ = process_commands(commands)

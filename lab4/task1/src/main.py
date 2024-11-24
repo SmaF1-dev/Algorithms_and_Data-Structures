@@ -42,7 +42,7 @@ def main(input_path, output_path):
     commands = read_inp[1]
     print("Входные данные:")
     print(n)
-    print(commands)
+    print(*commands)
 
     result = '\n'.join(map(str,work_with_stack(n, commands)))
     print("Результат:")
