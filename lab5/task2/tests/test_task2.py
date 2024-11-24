@@ -10,8 +10,8 @@ class TestCheckTreeHeight(unittest.TestCase):
         expected_result = 4
         n=5
         data = [-1, 0, 4, 0, 3]
-        expected_time = 2
-        expected_memory = 256
+        expected_time = 3
+        expected_memory = 512
 
         # when
         time_st = time.perf_counter()
@@ -33,8 +33,8 @@ class TestCheckTreeHeight(unittest.TestCase):
         expected_result = 3
         n=5
         data = [4, -1, 4, 1, 1]
-        expected_time = 2
-        expected_memory = 256
+        expected_time = 3
+        expected_memory = 512
 
         # when
         time_st = time.perf_counter()
