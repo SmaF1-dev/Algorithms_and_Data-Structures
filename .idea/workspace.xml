@@ -5,39 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f54d1422-3b7f-45da-9d6e-e657b2da95ca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lab5/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5/run_tasks.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5/run_tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5/task1/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5/task1/src/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5/task1/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5/task1/tests/test_task1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5/task1/txtf/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5/task1/txtf/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5/task2/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5/task2/src/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5/task2/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5/task2/tests/test_task2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5/task2/txtf/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5/task2/txtf/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5/task4/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5/task4/src/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5/task4/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5/task4/tests/test_task4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5/task4/txtf/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5/task4/txtf/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5/task7/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5/task7/src/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5/task7/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5/task7/tests/test_task7.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5/task7/txtf/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5/task7/txtf/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/task1/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/task1/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/task6/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/task6/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_all_labs.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_all_labs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_all_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_all_tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
