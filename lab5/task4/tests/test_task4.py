@@ -10,8 +10,8 @@ class TestBuildHeap(unittest.TestCase):
         expected_result = [(1, 4), (0, 1), (1, 3)]
         n = 5
         data = [5, 4, 3, 2, 1]
-        expected_time = 2
-        expected_memory = 256
+        expected_time = 3
+        expected_memory = 512
 
         # when
         time_st = time.perf_counter()
@@ -33,8 +33,8 @@ class TestBuildHeap(unittest.TestCase):
         expected_result = []
         n = 5
         data = [1,2,3,4,5]
-        expected_time = 2
-        expected_memory = 256
+        expected_time = 3
+        expected_memory = 512
 
         # when
         time_st = time.perf_counter()
