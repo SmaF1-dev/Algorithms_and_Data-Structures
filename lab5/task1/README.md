@@ -1,6 +1,7 @@
 # Задание №1
 ##  Куча ли?
 
+![image](https://github.com/user-attachments/assets/d8c306dd-f36d-4f95-a01a-ef538946357c)
 
 
 | №  | input.txt | output.txt |
