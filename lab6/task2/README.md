@@ -1,7 +1,7 @@
 # Задание №2
 ##  Телефонная книга.
 
-
+![image](https://github.com/user-attachments/assets/7c89969b-d135-4cb7-b90f-c107de004abc)
 
 | input.txt       | output.txt |
 |-----------------|------------|
