@@ -1,6 +1,7 @@
 # Задание №5
 ##  Наибольшая общая подпоследовательность трех последовательностей
 
+![image](https://github.com/user-attachments/assets/79f4f95e-63d4-436c-9996-627c04303d4c)
 
 
 | input.txt | output.txt |
