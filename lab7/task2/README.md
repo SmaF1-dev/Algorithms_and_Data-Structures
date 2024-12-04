@@ -1,8 +1,9 @@
 # Задание №2
 ##   Примитивный калькулятор
 
-<img width="355" alt="image" src="https://github.com/user-attachments/assets/efc602ba-25d7-4723-aaf2-b22cdda107a0">
-![image](https://github.com/user-attachments/assets/0bb28168-7bf0-4b32-8f0f-f7ddf68a9097)
+![image](https://github.com/user-attachments/assets/44af585c-1e8e-49b4-b931-1e8d4b2d95e6)
+![image](https://github.com/user-attachments/assets/c07bcc51-fe23-4b84-817b-847c31960667)
+
 
 
 | input.txt | output.txt |
