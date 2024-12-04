@@ -1,6 +1,7 @@
 # Задание №1
 ##  Обмен монет
 
+![image](https://github.com/user-attachments/assets/666b28f4-e78b-4869-9d7e-5c6ed71ca05e)
 
 
 | input.txt | output.txt |
