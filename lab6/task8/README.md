@@ -1,6 +1,7 @@
 # Задание №8
 ##  Почти интерактивная хеш-таблица
 
+![image](https://github.com/user-attachments/assets/4b0c0433-2e06-4dc7-a28a-d316de64c015)
 
 
 | input.txt | output.txt |
