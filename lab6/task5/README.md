@@ -1,7 +1,7 @@
 # Задание №5
 ##  Выборы в США
 
-
+![image](https://github.com/user-attachments/assets/741ff070-ca21-49b7-b144-2c9980eb7184)
 
 | input.txt | output.txt |
 |-----------|------------|
