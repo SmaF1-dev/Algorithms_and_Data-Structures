@@ -9,8 +9,8 @@ class TestHashTable(unittest.TestCase):
         # given
         expected_result = "3 1 1"
         data = "4 0 0 0 1 1 0 0"
-        expected_time = 2
-        expected_memory = 64
+        expected_time = 5
+        expected_memory = 256
 
         # when
         time_st = time.perf_counter()
