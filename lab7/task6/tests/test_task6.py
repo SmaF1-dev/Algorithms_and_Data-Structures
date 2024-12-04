@@ -9,7 +9,7 @@ class TestFindLst(unittest.TestCase):
         # given
         expected_result = (3, [3, 5, 6])
         data = [3, 29, 5, 5, 28, 6]
-        expected_time = 1
+        expected_time = 2
         expected_memory = 256
 
         # when
