@@ -26,7 +26,7 @@
 ## Инструкция по запуску
 1. Клонирование репозитория:
   ```rb
-  git clone https://github.com/L1tDeV/algorithms-and-data-structures.git
+  git clone https://github.com/SmaF1-dev/algorithms-and-data-structures.git
   ```
 2. Выберите необходимую лабораторную с номером M:
   ```
